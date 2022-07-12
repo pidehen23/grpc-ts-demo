@@ -12,7 +12,7 @@ npx grpc_tools_node_protoc \
   ./user.proto
 
 # 生成 d.ts 定义
-protoc \
+npx protoc \
   --plugin=protoc-gen-ts=./node_modules/.bin/protoc-gen-ts \
   --ts_out=grpc_js:./gen \
   ./user.proto
